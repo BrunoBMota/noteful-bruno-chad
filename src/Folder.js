@@ -2,6 +2,7 @@ import React from 'react';
 import { Router } from 'react-router-dom'
 import Note from './Note';
 import FoldersNav from './FoldersNav';
+// import NotesNav from './NotesNav';
 
 export default class Folder extends React.Component {
   render(){
@@ -15,7 +16,9 @@ export default class Folder extends React.Component {
     return (
       <div className="folder-container">
         <FoldersNav STORE={this.props.STORE}/>
-        {notes}
+        <ul>
+          {notes}
+        </ul>
       </div>
     )
   }

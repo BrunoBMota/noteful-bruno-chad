@@ -15,11 +15,11 @@ export default class MainSection extends React.Component {
     //   )
     // });
   
-    // const notes = this.props.STORE.notes.map(note => {
-    //   return (
-    //     <Note key={note.id} note={note}/> 
-    //   )
-    // });
+    const notes = this.props.STORE.notes.map(note => {
+      return (
+        <Note key={note.id} note={note}/> 
+      )
+    });
 
     return (
     <div className="main-section-route">
@@ -28,7 +28,7 @@ export default class MainSection extends React.Component {
       </header>
       <main>
         <ul>
-        <NotesNav STORE={this.props.STORE}/>
+        {notes}
         </ul>
       </main>
       <FoldersNav STORE={this.props.STORE}/>

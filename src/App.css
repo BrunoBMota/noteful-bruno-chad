@@ -6,3 +6,9 @@
   border: 2px solid green;
   margin: 20px 0;
 }
+
+
+.expanded-note-container {
+  margin: 40px;
+  border: 5px solid #333;
+}
