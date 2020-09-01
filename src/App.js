@@ -13,7 +13,7 @@ class App extends React.Component {
       <Route exact path='/' component={
         (props) => (<MainSection {...props} STORE={STORE}/> )
       }/>
-      <Route exact path='/folder/:folderId' component={
+      <Route path='/folder/:folderId' component={
         (props) => (<Folder {...props} STORE={STORE}/> )
       }/>
     </div>
